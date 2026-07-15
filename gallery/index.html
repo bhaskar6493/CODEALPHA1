@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery - MCA Mini Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <h1>Image Gallery</h1>
+    <p>A responsive image gallery built using HTML, CSS and JavaScript</p>
+  </header>
+
+  <!-- ===================== CATEGORY FILTER BUTTONS ===================== -->
+  <section class="filter-section">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="nature">Nature</button>
+    <button class="filter-btn" data-category="people">People</button>
+    <button class="filter-btn" data-category="city">City</button>
+  </section>
+
+  <!-- ===================== IMAGE GALLERY GRID ===================== -->
+  <main>
+    <div class="gallery" id="gallery">
+      <!-- Image cards are generated dynamically by script.js -->
+    </div>
+  </main>
+
+  <!-- ===================== LIGHTBOX (POPUP VIEW) ===================== -->
+  <div class="lightbox" id="lightbox">
+    <span class="close-btn" id="closeBtn">&times;</span>
+    <span class="nav-btn prev-btn" id="prevBtn">&#10094;</span>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="Selected image">
+    <span class="nav-btn next-btn" id="nextBtn">&#10095;</span>
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <p>Task 1: Image Gallery &mdash; MCA Project Submission</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
